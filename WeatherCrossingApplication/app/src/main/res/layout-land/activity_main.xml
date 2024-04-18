@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id = "@+id/swipeRefresh"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/nightTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="552dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="70F"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uvIndexValue" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="11pm"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/nightTemp"
+            app:layout_constraintTop_toBottomOf="@+id/visibilityValue" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="5pm"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/eveningTemp"
+            app:layout_constraintTop_toBottomOf="@+id/uvIndexValue" />
+
+        <TextView
+            android:id="@+id/eveningTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="404dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="70F"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uvIndexValue" />
+
+        <TextView
+            android:id="@+id/afternoonTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="70F"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uvIndexValue" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="1pm"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/afternoonTemp"
+            app:layout_constraintTop_toBottomOf="@+id/uvIndexValue" />
+
+        <TextView
+            android:id="@+id/dateValue"
+            android:layout_width="470dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Sun Aug 21 11:54 AM, 2022"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/temperatureValue"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:text="73F"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sunriseInformation" />
+
+        <TextView
+            android:id="@+id/feelsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:text="Feels like 73F"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temperatureValue" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.968"
+            app:layout_constraintStart_toEndOf="@+id/temperatureValue"
+            app:layout_constraintTop_toBottomOf="@+id/dateValue"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/descriptionInformation"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="right"
+            android:text="Partially Cloudy(25%clouds)"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.277"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateValue" />
+
+        <TextView
+            android:id="@+id/windInformation"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Winds: NE at 11 mph gusting to 10 mph"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toEndOf="@+id/descriptionInformation"
+            app:layout_constraintTop_toBottomOf="@+id/dateValue" />
+
+        <TextView
+            android:id="@+id/humidityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="272dp"
+            android:text="Humidity: 82%"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionInformation" />
+
+        <TextView
+            android:id="@+id/uvIndexValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="292dp"
+            android:text="UV Index: 2"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidityValue" />
+
+        <TextView
+            android:id="@+id/visibilityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Visibility: 2"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toEndOf="@+id/uvIndexValue"
+            app:layout_constraintTop_toBottomOf="@+id/windInformation" />
+
+        <TextView
+            android:id="@+id/morningTemprature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="70F"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uvIndexValue" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="8am"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/morningTemprature"
+            app:layout_constraintTop_toBottomOf="@+id/uvIndexValue" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hourlyView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/afternoonTemp"
+            app:layout_constraintVertical_bias="0.933" />
+
+        <TextView
+            android:id="@+id/sunriseInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Sunrise"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sunsetInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="28dp"
+            android:text="Sunset"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/dateValue"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout></androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
